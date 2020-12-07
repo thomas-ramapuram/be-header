@@ -76,7 +76,6 @@
         background-repeat: no-repeat;
         background-size: 160px 80px;
         color: transparent;
-        font-size: 25px;
         font-weight: bold;
       }
 
@@ -117,6 +116,46 @@
         background-repeat: no-repeat;
         padding-top: 45px;
         padding-bottom: 0;
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait),
+      only screen and (min--moz-device-pixel-ratio: 2) and (orientation:portrait),
+      only screen and (-o-min-device-pixel-ratio: 2/1) and (orientation:portrait),
+      only screen and (min-device-pixel-ratio: 2) and (orientation:portrait),
+      only screen and (min-resolution: 192dpi) and (orientation:portrait),
+      only screen and (min-resolution: 2dppx) and (orientation:portrait) {
+        .header-right{
+          height: 200px;
+        }
+        .header .home{
+          background-size: 80px 80px;
+          padding-top: 90px;
+        }
+        .header{
+          height: 200px;
+          padding: 40px 20px;
+        }
+
+        .header a.logo {
+          width: 320px;
+          height: 160px;
+          background-size: 320px 160px;
+        }
+
+
+        /* Retina styles here */
+        .dropdown-content a{
+          font-size: 36px;
+          padding: 24px 32px;
+        }
+
+        .dropdown-content {
+          min-width: 440px;
+        }
+        .dropbtn {
+          padding: 32px;
+        }
+
       }
 
     </style>
