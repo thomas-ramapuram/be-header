@@ -8,9 +8,10 @@
       .header {
         height: 100px;
         background-color: #fcf4ea;
-        padding: 20px 10px;
+        padding: 5px 10px;
         color: #6e422e;
       }
+
       /* Style The Dropdown Button */
       .dropbtn {
         color: #6e422e;
@@ -32,11 +33,8 @@
         position: absolute;
         background-color: #fcf4ea;
         min-width: 220px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
-      }
-
-      .dropdown-content {
         right: 0;
       }
 
@@ -47,24 +45,26 @@
         display: block;
       }
 
-      /* Change color of dropdown links on hover */
-      .dropdown-content a:hover {background-color: #ddd}
-
-      /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
       /* Style the header links */
       .header a {
         float: left;
-        font-family: "gill sans",Arial,sans-serif;
+        font-family: "gill sans", Arial, sans-serif;
         color: #6e422e;
         text-align: center;
         padding: 12px;
         text-decoration: none;
         line-height: 25px;
         border-radius: 4px;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
 
       /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -84,7 +84,7 @@
         background-color: #ddd;
       }
 
-      .header .home{
+      .header .home {
         vertical-align: middle;
         background-image: url('img/home.png');
         background-size: 40px 40px;
@@ -92,7 +92,6 @@
         background-repeat: no-repeat;
         padding-top: 45px;
         padding-bottom: 0;
-
       }
 
       /* Float the link section to the right */
@@ -108,46 +107,39 @@
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
-      .header .home{
-        vertical-align: middle;
-        background-image: url('img/home.png');
-        background-size: 40px 40px;
-        background-position: top;
-        background-repeat: no-repeat;
-        padding-top: 45px;
-        padding-bottom: 0;
-      }
 
-      @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait),
-      only screen and (min--moz-device-pixel-ratio: 2) and (orientation:portrait),
-      only screen and (-o-min-device-pixel-ratio: 2/1) and (orientation:portrait),
-      only screen and (min-device-pixel-ratio: 2) and (orientation:portrait),
-      only screen and (min-resolution: 192dpi) and (orientation:portrait),
-      only screen and (min-resolution: 2dppx) and (orientation:portrait) {
-        .header-right{
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (orientation: portrait),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+        only screen and (min-resolution: 192dpi) and (orientation: portrait),
+        only screen and (min-resolution: 2dppx) and (orientation: portrait) {
+        .header-right {
           height: 200px;
         }
-        .header .home{
+
+        .header .home {
           background-size: 80px 80px;
           padding-top: 90px;
         }
-        .header{
+
+        .header {
           height: 200px;
-          padding: 40px 20px;
+          padding: 20px 20px;
         }
 
         .header a.logo {
-          width: 320px;
-          height: 160px;
-          background-size: 320px 160px;
+          width: 400px;
+          height: 200px;
+          background-size: 400px 200px;
         }
 
-        button.dropbtn{
+        button.dropbtn {
           font-size: 36px;
         }
 
         /* Retina styles here */
-        .dropdown-content a{
+        .dropdown-content a {
           font-size: 36px;
           padding: 36px 32px;
         }
@@ -155,10 +147,10 @@
         .dropdown-content {
           min-width: 440px;
         }
+
         .dropbtn {
           padding: 32px;
         }
-
       }
 
     </style>
