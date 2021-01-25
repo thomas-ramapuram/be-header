@@ -15,3 +15,4 @@ package.json
 
 #stylelintrc file
 .stylelintrc.json
+/node_modules/
